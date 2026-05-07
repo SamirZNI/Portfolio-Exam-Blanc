@@ -205,6 +205,23 @@ footer { background:var(--dark); color:rgba(255,255,255,0.3); padding:22px 60px;
 .delay2 { transition-delay:0.2s; }
 .delay3 { transition-delay:0.3s; }
 
+/* ── Compétences tags sur les cards ── */
+.comp-tags { display:flex; flex-direction:column; gap:8px; margin-top:20px; padding-top:18px; border-top:1px solid var(--border); }
+.comp-tag { display:flex; align-items:flex-start; gap:8px; font-size:13px; color:var(--text2); line-height:1.55; background:var(--bg2); border-radius:10px; padding:10px 12px; }
+.comp-tag strong { color:var(--text); font-weight:600; }
+.comp-svg { flex-shrink:0; color:var(--accent); margin-top:2px; }
+
+/* ── Boutons documents ── */
+.real-docs { display:flex; flex-wrap:wrap; gap:8px; margin-top:16px; padding-top:16px; border-top:1px solid var(--border); }
+.doc-btn { display:inline-flex; align-items:center; gap:6px; padding:7px 14px; border-radius:20px; font-size:12px; font-weight:600; border:1.5px solid var(--border); color:var(--text2); transition:all 0.2s; white-space:nowrap; cursor:pointer; }
+.doc-btn svg { flex-shrink:0; opacity:0.7; }
+.doc-btn:hover { border-color:var(--accent); color:var(--accent); background:rgba(91,61,232,0.05); transform:translateY(-1px); }
+.doc-btn:hover svg { opacity:1; }
+.doc-btn.site { background:var(--accent); color:#fff !important; border-color:var(--accent); }
+.doc-btn.site svg { opacity:1; }
+.doc-btn.site:hover { background:var(--dark); border-color:var(--dark); }
+.doc-btn.disabled { opacity:0.45; cursor:default; pointer-events:none; }
+
 /* ── Filtres réalisations ── */
 .real-filters { display:flex; gap:8px; margin-bottom:32px; flex-wrap:wrap; }
 .real-filter {
